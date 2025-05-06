@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Index = () => {
   return (
     <div className="kids-can-read-landing">
-      <style jsx>{`
+      <style>{`
         /* Base styles */
         body {
           margin: 0;
@@ -26,28 +26,24 @@ const Index = () => {
           padding: 0 20px;
         }
         
-        /* Multi-color theme */
+        /* Violet-focused theme */
         .gradient-text {
-          background: linear-gradient(90deg, #7CB77C, #9F7AEA, #1EAEDB);
+          background: linear-gradient(90deg, #9F7AEA, #8B5CF6, #7C3AED);
           -webkit-background-clip: text;
           background-clip: text;
           color: transparent;
         }
         
         .gradient-bg {
-          background: linear-gradient(135deg, #F2FCE2 0%, #E5DEFF 50%, #D3E4FD 100%);
+          background: linear-gradient(135deg, #EBE5FF 0%, #D6BCFA 100%);
         }
         
-        .green-accent {
-          color: #7CB77C;
-        }
-        
-        .purple-accent {
+        .violet-accent {
           color: #9F7AEA;
         }
         
-        .blue-accent {
-          color: #1EAEDB;
+        .violet-dark {
+          color: #7C3AED;
         }
         
         /* Header styles */
@@ -77,10 +73,7 @@ const Index = () => {
         .logo span {
           font-size: 24px;
           font-weight: bold;
-          background: linear-gradient(90deg, #7CB77C, #9F7AEA, #1EAEDB);
-          -webkit-background-clip: text;
-          background-clip: text;
-          color: transparent;
+          color: #9F7AEA;
           margin-left: 10px;
         }
         
@@ -88,7 +81,7 @@ const Index = () => {
           display: flex;
           width: 40px;
           height: 40px;
-          background: linear-gradient(90deg, #7CB77C, #9F7AEA, #1EAEDB);
+          background: #9F7AEA;
           border-radius: 8px;
           justify-content: center;
           align-items: center;
@@ -121,7 +114,7 @@ const Index = () => {
           height: 3px;
           bottom: -5px;
           left: 0;
-          background: linear-gradient(90deg, #7CB77C, #9F7AEA, #1EAEDB);
+          background: #9F7AEA;
           transition: width 0.3s ease;
         }
         
@@ -139,7 +132,7 @@ const Index = () => {
         }
         
         .btn-primary {
-          background: linear-gradient(90deg, #7CB77C, #9F7AEA, #1EAEDB);
+          background: #9F7AEA;
           color: white;
           box-shadow: 0 4px 8px rgba(0,0,0,0.15);
         }
@@ -170,7 +163,7 @@ const Index = () => {
         .mobile-menu-btn div {
           width: 25px;
           height: 3px;
-          background: linear-gradient(90deg, #7CB77C, #9F7AEA, #1EAEDB);
+          background: #9F7AEA;
           margin: 5px 0;
           transition: all 0.3s;
         }
@@ -179,17 +172,14 @@ const Index = () => {
         .hero {
           padding: 160px 0 100px;
           text-align: center;
-          background: linear-gradient(135deg, #F2FCE2 0%, #E5DEFF 50%, #D3E4FD 100%);
+          background: linear-gradient(135deg, #EBE5FF 0%, #D6BCFA 100%);
         }
         
         .hero h1 {
           font-size: 48px;
           margin-bottom: 20px;
           line-height: 1.2;
-          background: linear-gradient(90deg, #7CB77C, #9F7AEA, #1EAEDB);
-          -webkit-background-clip: text;
-          background-clip: text;
-          color: transparent;
+          color: #7C3AED;
         }
         
         .hero p {
@@ -230,10 +220,7 @@ const Index = () => {
           text-align: center;
           font-size: 36px;
           margin-bottom: 60px;
-          background: linear-gradient(90deg, #7CB77C, #9F7AEA, #1EAEDB);
-          -webkit-background-clip: text;
-          background-clip: text;
-          color: transparent;
+          color: #7C3AED;
         }
         
         .feature-grid {
@@ -251,20 +238,8 @@ const Index = () => {
           transition: transform 0.3s, box-shadow 0.3s;
         }
         
-        .feature-item:nth-child(1) {
-          border-top: 5px solid #7CB77C;
-        }
-        
-        .feature-item:nth-child(2) {
+        .feature-item {
           border-top: 5px solid #9F7AEA;
-        }
-        
-        .feature-item:nth-child(3) {
-          border-top: 5px solid #1EAEDB;
-        }
-        
-        .feature-item:nth-child(4) {
-          border-top: 5px solid #7CB77C;
         }
         
         .feature-item:hover {
@@ -282,27 +257,13 @@ const Index = () => {
           margin: 0 auto 20px;
           color: white;
           font-size: 32px;
-        }
-        
-        .feature-item:nth-child(1) .feature-icon {
-          background: linear-gradient(135deg, #7CB77C 0%, #92D192 100%);
-        }
-        
-        .feature-item:nth-child(2) .feature-icon {
-          background: linear-gradient(135deg, #9F7AEA 0%, #BCA5F6 100%);
-        }
-        
-        .feature-item:nth-child(3) .feature-icon {
-          background: linear-gradient(135deg, #1EAEDB 0%, #60CCF8 100%);
-        }
-        
-        .feature-item:nth-child(4) .feature-icon {
-          background: linear-gradient(135deg, #7CB77C 0%, #92D192 100%);
+          background: linear-gradient(135deg, #9F7AEA 0%, #D6BCFA 100%);
         }
         
         .feature-item h3 {
           font-size: 22px;
           margin-bottom: 15px;
+          color: #9F7AEA;
         }
         
         .feature-item p {
@@ -312,7 +273,7 @@ const Index = () => {
         /* Benefits section */
         .benefits {
           padding: 100px 0;
-          background: linear-gradient(135deg, #E5DEFF 0%, #F2FCE2 100%);
+          background: linear-gradient(135deg, #EBE5FF 0%, #D6BCFA 100%);
         }
         
         .benefit-grid {
@@ -326,21 +287,14 @@ const Index = () => {
           border-radius: 15px;
           padding: 30px;
           box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-        }
-        
-        .benefit-card:nth-child(1) {
           border-top: 5px solid #9F7AEA;
-        }
-        
-        .benefit-card:nth-child(2) {
-          border-top: 5px solid #1EAEDB;
         }
         
         .benefit-card h3 {
           font-size: 24px;
           margin-bottom: 15px;
           text-align: center;
-          color: #444;
+          color: #7C3AED;
         }
         
         .benefit-list {
@@ -359,7 +313,7 @@ const Index = () => {
           content: '✓';
           position: absolute;
           left: 0;
-          color: #7CB77C;
+          color: #9F7AEA;
           font-weight: bold;
         }
         
@@ -396,22 +350,7 @@ const Index = () => {
           margin-right: 20px;
           flex-shrink: 0;
           color: white;
-        }
-        
-        .step:nth-child(1) .step-number {
-          background-color: #7CB77C;
-        }
-        
-        .step:nth-child(2) .step-number {
           background-color: #9F7AEA;
-        }
-        
-        .step:nth-child(3) .step-number {
-          background-color: #1EAEDB;
-        }
-        
-        .step:nth-child(4) .step-number {
-          background-color: #7CB77C;
         }
         
         .step-content {
@@ -421,13 +360,13 @@ const Index = () => {
         .step-content h3 {
           font-size: 24px;
           margin-bottom: 10px;
-          color: #444;
+          color: #7C3AED;
         }
         
         /* Screenshots section */
         .screenshots {
           padding: 100px 0;
-          background: linear-gradient(135deg, #D3E4FD 0%, #E5DEFF 100%);
+          background: linear-gradient(135deg, #EBE5FF 0%, #D6BCFA 100%);
         }
         
         .screenshot-grid {
@@ -441,23 +380,7 @@ const Index = () => {
           overflow: hidden;
           box-shadow: 0 5px 15px rgba(0,0,0,0.1);
           transition: transform 0.3s, box-shadow 0.3s;
-          border: 5px solid white;
-        }
-        
-        .screenshot-item:nth-child(1) {
-          border-color: #7CB77C;
-        }
-        
-        .screenshot-item:nth-child(2) {
-          border-color: #9F7AEA;
-        }
-        
-        .screenshot-item:nth-child(3) {
-          border-color: #1EAEDB;
-        }
-        
-        .screenshot-item:nth-child(4) {
-          border-color: #7CB77C;
+          background-color: white;
         }
         
         .screenshot-item:hover {
@@ -482,19 +405,7 @@ const Index = () => {
           border-radius: 15px;
           padding: 30px;
           box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-          border-left: 5px solid transparent;
-        }
-        
-        .testimonial-item:nth-child(1) {
-          border-left-color: #7CB77C;
-        }
-        
-        .testimonial-item:nth-child(2) {
-          border-left-color: #9F7AEA;
-        }
-        
-        .testimonial-item:nth-child(3) {
-          border-left-color: #1EAEDB;
+          border-left: 5px solid #9F7AEA;
         }
         
         .testimonial-text {
@@ -511,17 +422,14 @@ const Index = () => {
         /* CTA section */
         .cta {
           padding: 100px 0;
-          background: linear-gradient(135deg, #F2FCE2 0%, #D3E4FD 100%);
+          background: linear-gradient(135deg, #EBE5FF 0%, #D6BCFA 100%);
           text-align: center;
         }
         
         .cta h2 {
           font-size: 36px;
           margin-bottom: 20px;
-          background: linear-gradient(90deg, #7CB77C, #9F7AEA, #1EAEDB);
-          -webkit-background-clip: text;
-          background-clip: text;
-          color: transparent;
+          color: #7C3AED;
         }
         
         .cta p {
@@ -533,7 +441,7 @@ const Index = () => {
         
         /* Footer */
         footer {
-          background: linear-gradient(90deg, #7CB77C, #9F7AEA, #1EAEDB);
+          background: #9F7AEA;
           color: white;
           padding: 50px 0 20px;
         }
@@ -608,11 +516,6 @@ const Index = () => {
             font-size: 36px;
           }
           
-          .cta-buttons {
-            flex-direction: column;
-            gap: 10px;
-          }
-          
           .benefit-grid {
             grid-template-columns: 1fr;
           }
@@ -623,6 +526,17 @@ const Index = () => {
           
           .step-number {
             margin-bottom: 10px;
+          }
+          
+          .cta-buttons {
+            flex-direction: column;
+            align-items: center;
+          }
+          
+          .cta-buttons .btn {
+            width: 100%;
+            max-width: 300px;
+            text-align: center;
           }
         }
       `}</style>
@@ -651,7 +565,8 @@ const Index = () => {
               <li><a href="#benefits" className="nav-link">Benefits</a></li>
               <li><a href="#how-it-works" className="nav-link">How It Works</a></li>
               <li><a href="#screenshots" className="nav-link">Sneak Peek</a></li>
-              <li><a href="#get-started" className="btn btn-primary">Get Started</a></li>
+              <li><Link to="/contact" className="nav-link">Contact</Link></li>
+              <li><Link to="/contact" className="btn btn-primary">Get Started</Link></li>
             </ul>
           </nav>
         </div>
@@ -662,11 +577,11 @@ const Index = () => {
           <h1>Read the story.<br/>Play the game.<br/>Master words.</h1>
           <p>A visual novel-based learning app that makes spelling, reading, and writing fun for children in grades 5-10.</p>
           <div className="cta-buttons">
-            <a href="#get-started" className="btn btn-primary">Start Your Child's Learning Adventure</a>
+            <Link to="/contact" className="btn btn-primary">Start Your Child's Learning Adventure</Link>
             <a href="#how-it-works" className="btn btn-secondary">See How It Works</a>
           </div>
           <div className="hero-image">
-            <img src="https://via.placeholder.com/800x450/E5F6FF/444?text=Interactive+Learning+Story" alt="Interactive learning story screenshot" />
+            <img src="https://via.placeholder.com/800x450/EBE5FF/444?text=Interactive+Learning+Story" alt="Interactive learning story screenshot" />
           </div>
         </div>
       </section>
@@ -682,7 +597,7 @@ const Index = () => {
                   <path d="M10 2.5v9l3-5 3 5v-9"/>
                 </svg>
               </div>
-              <h3 className="green-accent">Interactive Stories</h3>
+              <h3>Interactive Stories</h3>
               <p>Progress through engaging stories by reading dialogues and making choices that affect the narrative.</p>
             </div>
             
@@ -692,7 +607,7 @@ const Index = () => {
                   <polygon points="5 3 19 12 5 21 5 3"/>
                 </svg>
               </div>
-              <h3 className="purple-accent">Spelling Activities</h3>
+              <h3>Spelling Activities</h3>
               <p>Embedded spelling correction activities within the story to improve vocabulary and writing skills.</p>
             </div>
             
@@ -703,7 +618,7 @@ const Index = () => {
                   <polyline points="12 5 19 12 12 19"/>
                 </svg>
               </div>
-              <h3 className="blue-accent">Vocabulary Learning</h3>
+              <h3>Vocabulary Learning</h3>
               <p>Learn new words through context and interactive exercises designed to improve reading comprehension.</p>
             </div>
             
@@ -714,7 +629,7 @@ const Index = () => {
                   <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/>
                 </svg>
               </div>
-              <h3 className="green-accent">Diary Writing</h3>
+              <h3>Diary Writing</h3>
               <p>Reinforce learning and reflect after each story segment through guided diary entries.</p>
             </div>
           </div>
@@ -726,7 +641,7 @@ const Index = () => {
           <h2 className="section-title">Benefits</h2>
           <div className="benefit-grid">
             <div className="benefit-card">
-              <h3 className="purple-accent">For Kids</h3>
+              <h3>For Kids</h3>
               <ul className="benefit-list">
                 <li>Improved reading comprehension through interactive storytelling</li>
                 <li>Enhanced vocabulary through contextual learning</li>
@@ -737,7 +652,7 @@ const Index = () => {
             </div>
             
             <div className="benefit-card">
-              <h3 className="blue-accent">For Parents</h3>
+              <h3>For Parents</h3>
               <ul className="benefit-list">
                 <li>Track your child's progress in reading and writing</li>
                 <li>Gain insights into areas that need additional support</li>
@@ -757,7 +672,7 @@ const Index = () => {
             <div className="step">
               <div className="step-number">1</div>
               <div className="step-content">
-                <h3 className="green-accent">Choose a Story</h3>
+                <h3>Choose a Story</h3>
                 <p>Select from a variety of engaging visual novels tailored to different reading levels and interests.</p>
               </div>
             </div>
@@ -765,7 +680,7 @@ const Index = () => {
             <div className="step">
               <div className="step-number">2</div>
               <div className="step-content">
-                <h3 className="purple-accent">Read and Play</h3>
+                <h3>Read and Play</h3>
                 <p>Progress through the story, making choices and completing spelling activities that affect the narrative.</p>
               </div>
             </div>
@@ -773,7 +688,7 @@ const Index = () => {
             <div className="step">
               <div className="step-number">3</div>
               <div className="step-content">
-                <h3 className="blue-accent">Practice Spelling</h3>
+                <h3>Practice Spelling</h3>
                 <p>Encounter challenging words and practice spelling them correctly to advance in the story.</p>
               </div>
             </div>
@@ -781,7 +696,7 @@ const Index = () => {
             <div className="step">
               <div className="step-number">4</div>
               <div className="step-content">
-                <h3 className="green-accent">Write in Your Diary</h3>
+                <h3>Write in Your Diary</h3>
                 <p>Reflect on the story and practice writing skills through guided diary entries after each chapter.</p>
               </div>
             </div>
@@ -794,16 +709,13 @@ const Index = () => {
           <h2 className="section-title">Sneak Peek</h2>
           <div className="screenshot-grid">
             <div className="screenshot-item">
-              <img src="https://via.placeholder.com/600x400/F2FCE2/444?text=Story+Selection" alt="Story selection screen" />
+              <img src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Reading app on phone" />
             </div>
             <div className="screenshot-item">
-              <img src="https://via.placeholder.com/600x400/E5DEFF/444?text=Interactive+Dialogue" alt="Interactive dialogue screen" />
+              <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Interactive dialogue screen" />
             </div>
             <div className="screenshot-item">
-              <img src="https://via.placeholder.com/600x400/D3E4FD/444?text=Spelling+Challenge" alt="Spelling challenge screen" />
-            </div>
-            <div className="screenshot-item">
-              <img src="https://via.placeholder.com/600x400/FFFFFF/444?text=Diary+Writing" alt="Diary writing screen" />
+              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Learning app interface" />
             </div>
           </div>
         </div>
@@ -835,7 +747,7 @@ const Index = () => {
         <div className="container">
           <h2>Start Your Child's Learning Adventure Today</h2>
           <p>Give your child the gift of improved reading and writing skills through fun, interactive storytelling.</p>
-          <a href="#" className="btn btn-primary">Get Started Now</a>
+          <Link to="/contact" className="btn btn-primary">Get Started Now</Link>
         </div>
       </section>
 
@@ -854,6 +766,7 @@ const Index = () => {
                 <li><a href="#benefits">Benefits</a></li>
                 <li><a href="#how-it-works">How It Works</a></li>
                 <li><a href="#screenshots">Sneak Peek</a></li>
+                <li><Link to="/contact">Contact Us</Link></li>
               </ul>
             </div>
             
@@ -863,7 +776,7 @@ const Index = () => {
                 <li><a href="#">Help Center</a></li>
                 <li><a href="#">Privacy Policy</a></li>
                 <li><a href="#">Terms of Service</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><Link to="/contact">Contact Us</Link></li>
               </ul>
             </div>
           </div>
