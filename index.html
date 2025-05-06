@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -30,8 +29,8 @@
       
       body {
         font-family: 'Nunito', sans-serif;
-        background-color: #FDE1D3;
-        color: #8B5A2B;
+        background-color: #FDF3F5;
+        color: #6C3483;
         line-height: 1.6;
       }
       
@@ -82,8 +81,22 @@
       .logo span {
         font-size: 24px;
         font-weight: bold;
-        color: #8B5A2B;
+        background: linear-gradient(135deg, #FF6B6B, #FFD93D, #6BCB77, #4D96FF);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
         margin-left: 10px;
+      }
+      
+      .logo-icon {
+        display: flex;
+        width: 32px;
+        height: 32px;
+        background: linear-gradient(135deg, #FF6B6B, #FFD93D, #6BCB77, #4D96FF);
+        border-radius: 6px;
+        justify-content: center;
+        align-items: center;
+        color: white;
       }
       
       nav ul {
@@ -96,12 +109,12 @@
       }
       
       nav a {
-        color: #8B5A2B;
+        color: #6C3483;
         font-weight: 600;
       }
       
       nav a:hover {
-        color: rgba(139, 90, 43, 0.7);
+        color: #9B59B6;
       }
       
       .btn {
@@ -113,7 +126,7 @@
       }
       
       .btn-primary {
-        background: linear-gradient(135deg, #8B5A2B 0%, #A67C52 100%);
+        background: linear-gradient(135deg, #9B59B6 0%, #8E44AD 100%);
         color: white;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       }
@@ -124,7 +137,7 @@
       }
       
       .btn-secondary {
-        background: linear-gradient(135deg, #7CB77C 0%, #90D490 100%);
+        background: linear-gradient(135deg, #3498DB 0%, #2980B9 100%);
         color: white;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       }
@@ -144,14 +157,14 @@
       .mobile-menu-btn div {
         width: 25px;
         height: 3px;
-        background-color: #8B5A2B;
+        background-color: #6C3483;
         margin: 5px 0;
         transition: all 0.3s;
       }
       
       /* Hero section */
       .hero {
-        background: linear-gradient(to bottom, #FDE1D3, white);
+        background: linear-gradient(to bottom, #FDF3F5, white);
         padding: 150px 0 100px;
         text-align: center;
       }
@@ -160,11 +173,15 @@
         font-size: 48px;
         margin-bottom: 20px;
         line-height: 1.2;
+        background: linear-gradient(135deg, #9B59B6, #3498DB, #2ECC71, #F1C40F);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
       }
       
       .hero p {
         font-size: 20px;
-        color: rgba(139, 90, 43, 0.8);
+        color: #6C3483;
         max-width: 600px;
         margin: 0 auto 30px;
       }
@@ -199,6 +216,10 @@
         text-align: center;
         font-size: 36px;
         margin-bottom: 60px;
+        background: linear-gradient(135deg, #9B59B6, #3498DB, #2ECC71, #F1C40F);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
       }
       
       .feature-grid {
@@ -214,6 +235,23 @@
         text-align: center;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
         transition: transform 0.3s, box-shadow 0.3s;
+        border-top: 5px solid transparent;
+      }
+      
+      .feature-item:nth-child(1) {
+        border-color: #FF6B6B;
+      }
+      
+      .feature-item:nth-child(2) {
+        border-color: #FFD93D;
+      }
+      
+      .feature-item:nth-child(3) {
+        border-color: #6BCB77;
+      }
+      
+      .feature-item:nth-child(4) {
+        border-color: #4D96FF;
       }
       
       .feature-item:hover {
@@ -224,12 +262,27 @@
       .feature-icon {
         width: 80px;
         height: 80px;
-        background: linear-gradient(135deg, #FDE1D3 0%, #FFDEE2 100%);
         border-radius: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
         margin: 0 auto 20px;
+      }
+      
+      .feature-icon:nth-child(1) {
+        background: linear-gradient(135deg, #FF6B6B 0%, #FFA4A4 100%);
+      }
+      
+      .feature-icon:nth-child(2) {
+        background: linear-gradient(135deg, #FFD93D 0%, #FFE487 100%);
+      }
+      
+      .feature-icon:nth-child(3) {
+        background: linear-gradient(135deg, #6BCB77 0%, #A0E8A8 100%);
+      }
+      
+      .feature-icon:nth-child(4) {
+        background: linear-gradient(135deg, #4D96FF 0%, #96C0FF 100%);
       }
       
       .feature-icon img {
@@ -240,7 +293,7 @@
       /* Benefits section */
       .benefits {
         padding: 100px 0;
-        background-color: #FFDEE2;
+        background-color: #F0E4F8;
       }
       
       .benefit-grid {
@@ -256,10 +309,19 @@
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
       }
       
+      .benefit-card:nth-child(1) {
+        border-top: 5px solid #FF6B6B;
+      }
+      
+      .benefit-card:nth-child(2) {
+        border-top: 5px solid #4D96FF;
+      }
+      
       .benefit-card h3 {
         font-size: 24px;
         margin-bottom: 15px;
         text-align: center;
+        color: #6C3483;
       }
       
       .benefit-list {
@@ -276,7 +338,7 @@
         content: '✓';
         position: absolute;
         left: 0;
-        color: #7CB77C;
+        color: #2ECC71;
         font-weight: bold;
       }
       
@@ -304,7 +366,6 @@
       .step-number {
         width: 50px;
         height: 50px;
-        background-color: #FDE1D3;
         border-radius: 50%;
         display: flex;
         align-items: center;
@@ -313,6 +374,23 @@
         font-size: 24px;
         margin-right: 20px;
         flex-shrink: 0;
+        color: white;
+      }
+      
+      .step:nth-child(1) .step-number {
+        background-color: #FF6B6B;
+      }
+      
+      .step:nth-child(2) .step-number {
+        background-color: #FFD93D;
+      }
+      
+      .step:nth-child(3) .step-number {
+        background-color: #6BCB77;
+      }
+      
+      .step:nth-child(4) .step-number {
+        background-color: #4D96FF;
       }
       
       .step-content {
@@ -322,12 +400,13 @@
       .step-content h3 {
         font-size: 24px;
         margin-bottom: 10px;
+        color: #6C3483;
       }
       
       /* Screenshots section */
       .screenshots {
         padding: 100px 0;
-        background-color: #FEF7CD;
+        background-color: #E5F6FF;
       }
       
       .screenshot-grid {
@@ -341,6 +420,23 @@
         overflow: hidden;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         transition: transform 0.3s, box-shadow 0.3s;
+        border: 5px solid white;
+      }
+      
+      .screenshot-item:nth-child(1) {
+        border-color: #FF6B6B;
+      }
+      
+      .screenshot-item:nth-child(2) {
+        border-color: #FFD93D;
+      }
+      
+      .screenshot-item:nth-child(3) {
+        border-color: #6BCB77;
+      }
+      
+      .screenshot-item:nth-child(4) {
+        border-color: #4D96FF;
       }
       
       .screenshot-item:hover {
@@ -365,39 +461,58 @@
         border-radius: 15px;
         padding: 30px;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        border-left: 5px solid transparent;
+      }
+      
+      .testimonial-item:nth-child(1) {
+        border-left-color: #FF6B6B;
+      }
+      
+      .testimonial-item:nth-child(2) {
+        border-left-color: #FFD93D;
+      }
+      
+      .testimonial-item:nth-child(3) {
+        border-left-color: #6BCB77;
       }
       
       .testimonial-text {
         font-style: italic;
         margin-bottom: 15px;
+        color: #6C3483;
       }
       
       .testimonial-author {
         font-weight: bold;
+        color: #9B59B6;
       }
       
       /* CTA section */
       .cta {
         padding: 100px 0;
-        background: linear-gradient(135deg, #FDE1D3 0%, #FFDEE2 100%);
+        background: linear-gradient(135deg, #E5F6FF 0%, #F0E4F8 100%);
         text-align: center;
       }
       
       .cta h2 {
         font-size: 36px;
         margin-bottom: 20px;
+        background: linear-gradient(135deg, #9B59B6, #3498DB);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
       }
       
       .cta p {
         font-size: 20px;
-        color: rgba(139, 90, 43, 0.8);
+        color: #6C3483;
         max-width: 600px;
         margin: 0 auto 30px;
       }
       
       /* Footer */
       footer {
-        background-color: #8B5A2B;
+        background: linear-gradient(135deg, #9B59B6 0%, #8E44AD 100%);
         color: white;
         padding: 50px 0 20px;
       }
@@ -493,7 +608,12 @@
     <header>
       <div class="container nav-container">
         <div class="logo">
-          <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiM4QjVBMkIiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1ib29rIj48cGF0aCBkPSJNNCAxOS41di0xNUEyLjUgMi41IDAgMCAxIDYuNSAySDIwdjIwSDB2LTIuNWEyLjUgMi41IDAgMCAxIDIuNS0yLjVIMTkiLz48cGF0aCBkPSJNMTAgMi41djlsMy01IDMgNXYtOSIvPjwvc3ZnPg==" alt="Book icon" width="32" height="32">
+          <div class="logo-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H0v-2.5a2.5 2.5 0 0 1 2.5-2.5H19"/>
+              <path d="M10 2.5v9l3-5 3 5v-9"/>
+            </svg>
+          </div>
           <span>Kids Can Read</span>
         </div>
         
@@ -524,7 +644,7 @@
           <a href="#how-it-works" class="btn btn-secondary">See How It Works</a>
         </div>
         <div class="hero-image">
-          <img src="https://via.placeholder.com/800x450/FDE1D3/8B5A2B?text=Interactive+Learning+Story" alt="Interactive learning story screenshot">
+          <img src="https://via.placeholder.com/800x450/E5F6FF/6C3483?text=Interactive+Learning+Story" alt="Interactive learning story screenshot">
         </div>
       </div>
     </section>
@@ -535,7 +655,10 @@
         <div class="feature-grid">
           <div class="feature-item">
             <div class="feature-icon">
-              <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiM4QjVBMkIiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1ib29rIj48cGF0aCBkPSJNNCAxOS41di0xNUEyLjUgMi41IDAgMCAxIDYuNSAySDIwdjIwSDB2LTIuNWEyLjUgMi41IDAgMCAxIDIuNS0yLjVIMTkiLz48cGF0aCBkPSJNMTAgMi41djlsMy01IDMgNXYtOSIvPjwvc3ZnPg==" alt="Book icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book">
+                <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H0v-2.5a2.5 2.5 0 0 1 2.5-2.5H19"/>
+                <path d="M10 2.5v9l3-5 3 5v-9"/>
+              </svg>
             </div>
             <h3>Interactive Stories</h3>
             <p>Progress through engaging stories by reading dialogues and making choices that affect the narrative.</p>
@@ -543,7 +666,9 @@
           
           <div class="feature-item">
             <div class="feature-icon">
-              <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiM4QjVBMkIiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1wbGF5Ij48cG9seWdvbiBwb2ludHM9IjUgMyAxOSAxMiA1IDIxIDUgMyIvPjwvc3ZnPg==" alt="Play icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-play">
+                <polygon points="5 3 19 12 5 21 5 3"/>
+              </svg>
             </div>
             <h3>Spelling Activities</h3>
             <p>Embedded spelling correction activities within the story to improve vocabulary and writing skills.</p>
@@ -551,7 +676,10 @@
           
           <div class="feature-item">
             <div class="feature-icon">
-              <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiM4QjVBMkIiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1hcnJvdy1yaWdodCI+PGxpbmUgeDE9IjUiIHkxPSIxMiIgeDI9IjE5IiB5Mj0iMTIiLz48cG9seWxpbmUgcG9pbnRzPSIxMiA1IDE5IDEyIDEyIDE5Ii8+PC9zdmc+" alt="Arrow right icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right">
+                <line x1="5" y1="12" x2="19" y2="12"/>
+                <polyline points="12 5 19 12 12 19"/>
+              </svg>
             </div>
             <h3>Vocabulary Learning</h3>
             <p>Learn new words through context and interactive exercises designed to improve reading comprehension.</p>
@@ -559,7 +687,10 @@
           
           <div class="feature-item">
             <div class="feature-icon">
-              <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiM4QjVBMkIiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1lZGl0Ij48cGF0aCBkPSJNMTEgNCwuNSAyMC41djIuNWgySiIvPjxwYXRoIGQ9Ik0xOC41IDJhMi4yIDIuMiAwIDAgMSAxLjYuNiAyLjIgMi4yIDAgMCAxIC42IDEuNmMwIC40LS4yLjgtLjUgMS4xTDUuNyAyMC41bC00LjAgMS40IDEuNC00TDE4LjIgMi41Yy4zLS4zLjctLjUgMS4xLS41WiIvPjwvc3ZnPg==" alt="Edit icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-edit">
+                <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/>
+                <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/>
+              </svg>
             </div>
             <h3>Diary Writing</h3>
             <p>Reinforce learning and reflect after each story segment through guided diary entries.</p>
@@ -641,16 +772,16 @@
         <h2 class="section-title">Sneak Peek</h2>
         <div class="screenshot-grid">
           <div class="screenshot-item">
-            <img src="https://via.placeholder.com/600x400/FDE1D3/8B5A2B?text=Story+Selection" alt="Story selection screen">
+            <img src="https://via.placeholder.com/600x400/E5F6FF/6C3483?text=Story+Selection" alt="Story selection screen">
           </div>
           <div class="screenshot-item">
-            <img src="https://via.placeholder.com/600x400/FFDEE2/8B5A2B?text=Interactive+Dialogue" alt="Interactive dialogue screen">
+            <img src="https://via.placeholder.com/600x400/FFDEE2/6C3483?text=Interactive+Dialogue" alt="Interactive dialogue screen">
           </div>
           <div class="screenshot-item">
-            <img src="https://via.placeholder.com/600x400/FEF7CD/8B5A2B?text=Spelling+Challenge" alt="Spelling challenge screen">
+            <img src="https://via.placeholder.com/600x400/FEF7CD/6C3483?text=Spelling+Challenge" alt="Spelling challenge screen">
           </div>
           <div class="screenshot-item">
-            <img src="https://via.placeholder.com/600x400/E5DEFF/8B5A2B?text=Diary+Writing" alt="Diary writing screen">
+            <img src="https://via.placeholder.com/600x400/E5DEFF/6C3483?text=Diary+Writing" alt="Diary writing screen">
           </div>
         </div>
       </div>
