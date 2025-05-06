@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 
@@ -709,13 +708,13 @@ const Index = () => {
           <h2 className="section-title">Sneak Peek</h2>
           <div className="screenshot-grid">
             <div className="screenshot-item">
-              <img src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Reading app on phone" />
+              <img src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Kids Can Read app on laptop" />
             </div>
             <div className="screenshot-item">
-              <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Interactive dialogue screen" />
+              <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Interactive story app interface" />
             </div>
             <div className="screenshot-item">
-              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Learning app interface" />
+              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Reading app on modern device" />
             </div>
           </div>
         </div>
