@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 
@@ -72,7 +73,7 @@ const Index = () => {
         .logo span {
           font-size: 24px;
           font-weight: bold;
-          color: #9F7AEA;
+          color: #7C3AED; /* Changed to single violet color */
           margin-left: 10px;
         }
         
@@ -80,7 +81,7 @@ const Index = () => {
           display: flex;
           width: 40px;
           height: 40px;
-          background: #9F7AEA;
+          background: #7C3AED; /* Changed to single violet color */
           border-radius: 8px;
           justify-content: center;
           align-items: center;
